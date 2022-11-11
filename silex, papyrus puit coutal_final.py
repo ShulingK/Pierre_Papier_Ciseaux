@@ -37,15 +37,33 @@
 #               alors afficher "bravo joueur 1"
 #           sinon afficher "bravo joueur 2"
 #           sortir de la boucle 
-#       sinon inputClavierUn est égal à 3
+#       sinon si inputClavierUn est égal à 3
 #           assigner à joueurUnInput l'information de l'input du clavier sous format int ( silex (0) papyrus (1) coutal (2) ?)
 #           assigner à joueurDeuxInput l'information de l'input du clavier sous format int ( silex (0) papyrus (1) coutal (2) ?)
-#           assigner à result le retoure de l'execultion de round avec les parametres joueurUnInput et joueurDeuxInput
+#           assigner à result le retour de l'execultion de la fonction round avec les parametres joueurUnInput et joueurDeuxInput
 #           si result est égal à "manche gagnée par joueur 1"
 #               incrementer joueurUnScore de 1
 #           sinon si result est égal à "manche gagnée par joueur 2"
 #               incrementer joueurDeuxScore de 1
 #           sinon afficher result
+## avec BO
+#       sinon inputClavierUn est égal à 6
+#           assigner à nbrTours l'information de l'input du clavier sous format int "le nombre de manche necessaire pour gagner"
+#           assigner à joueurUnInput l'information de l'input du clavier sous format int ( silex (0) papyrus (1) coutal (2) ?)
+#           assigner à joueurDeuxInput l'information de l'input du clavier sous format int ( silex (0) papyrus (1) coutal (2) ?)
+#           assigner à result le retour de l'execultion de la fonction round avec les parametres joueurUnInput et joueurDeuxInput
+#               incrementer joueurUnScore de 1
+#               si joueurUnScore est égal a nbrTours
+#                   alors afficher vainqueur joueur 1 avec joueurUnScore point(s) (retour à la ligne) perdant joueur 2 avec joueurDeuxScore point(s)
+#               sortir de la boucle
+#           sinon si result est égal à "manche gagnée par joueur 2"
+#               incrementer joueurDeuxScore de 1
+#                   alors afficher vainqueur joueur 2 avec joueurDeuxScore point(s) (retour à la ligne) perdant joueur 1 avec joueurUnScore point(s)
+#               sortir de la boucle
+
+        
+
+
 
 ##jeu en 1vsbot
 
@@ -62,14 +80,12 @@
 #               alors afficher "bravo à vous!!!"
 #           sinon afficher "dommage..."
 #           sortir de la boucle 
-#       sinon inputClavierUn est égal à 3
+#       sinon si inputClavierUn est égal à 3
 #           assigner à inputClavierDeux l'information de l'input du clavier sous format int ( silex (0) papyrus (1) coutal (2) ?)
 #           assigner à botGame un nombre random sous format int entre 0 et 2
-#           assigner à result le retoure de l'execultion de round avec les parametres joueurInput et botGame
+#           assigner à result le retour de l'execultion de la fonction round avec les parametres joueurInput et botGame
 #           si result est égal à "manche gagnée par joueur 1"
 #               incrementer joueurScore de 1
-#           sinon si result est égal à "manche gagnée par joueur 2"
+#           sinon result est égal à "manche gagnée par joueur 2"
 #               incrementer botScore de 1
 #           sinon afficher result
-
-
