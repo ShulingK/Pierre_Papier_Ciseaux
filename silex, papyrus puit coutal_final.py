@@ -1,7 +1,7 @@
 # on admet la fonction random
     
 
-##silex 0, papyrus 1, coutal 2, puit 666
+##silex 0, papyrus 1, coutal 2, puit 9
 
 #definir la fonction round avec pour parametre eventJoueurUn et eventJoueurDeux  
 #   Assigner a joueurDeuxAction le retour du int() prenant en parametre eventJoueurUn
@@ -11,16 +11,14 @@
 #   assigner à joueurDeuxAction un chiffre random entre 0 et 2 
 #   si joueurUnAction est égal à joueurDeuxAction 
 #       alors retourner le message "match nul"
-#   si joueurUnAction est supérieur à joueurDeuxAction et que que joueurDeuxAction plus 1 est égal à joueurUnAction
+#   si joueurUnAction est supérieur à joueurDeuxAction et que joueurDeuxAction plus 1 est égal à joueurUnAction
 #   ou que joueurUnAction est inférieur à joueurDeuxAction et que la somme de joueurUnAction et joueurDeuxAction donne 3 
 #       alors retourner le message "manche gagnée par joueur 1"
 #   sinon retourner le message "manche gagnée par joueur 2"
-#   si joueurUnAction est égale à 666 
+#   si joueurUnAction est égale à 9 
 #       alors afficher le message "manche gagné par joueur 1"
-#   si joueurDeuxAction est égale à 666 
+#   si joueurDeuxAction est égale à 9 
 #       alors afficher le message "manche gagné par joueur 2"
-#   si joueurUnAction ou joueurDeuxAction est égal à 666
-#       alors afficher "match nul"
 
 
 ##jeu en 1vs1
