@@ -89,3 +89,17 @@
 #           sinon result est égal à "manche gagnée par joueur 2"
 #               incrementer botScore de 1
 #           sinon afficher result
+## avec BO
+#       sinon inputClavierUn est éga l à 6
+#           assigner à nbrTours l'information de l'input du clavier sous format int "le nombre de manche necessaire pour gagner"
+#           assigner à joueurInput l'information de l'input du clavier sous format int ( silex (0) papyrus (1) coutal (2) ?)
+#           assigner à botGame un nombre random sous format int entre 0 et 2
+#           assigner à result le retour de l'execultion de la fonction round avec les parametres joueurInput et botGame
+#               incrementer joueurScore de 1
+#               si joueurScore est égal a nbrTours
+#                   alors afficher vainqueur joueur avec joueurScore point(s) (retour à la ligne) perdant bot avec botScore point(s)
+#               sortir de la boucle
+#           sinon si result est égal à "manche gagnée par joueur 2"
+#               incrementer botScore de 1
+#                   alors afficher vainqueur bot avec joueurDeuxScore point(s) (retour à la ligne) perdant joueur avec joueurScore point(s)
+#               sortir de la boucle
