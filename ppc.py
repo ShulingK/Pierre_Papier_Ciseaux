@@ -15,6 +15,13 @@
 #   ou que joueurUnAction est inférieur à joueurDeuxAction et que la somme de joueurUnAction et joueurDeuxAction donne 3 
 #       alors retourner le message "manche gagnée par joueur 1"
 #   sinon retourner le message "manche gagnée par joueur 2"
+#   si joueurUnAction est égale à 666 
+#       alors afficher le message "manche gagné par joueur 1"
+#   si joueurDeuxAction est égale à 666 
+#       alors afficher le message "manche gagné par joueur 2"
+#   si joueurUnAction ou joueurDeuxAction est égal à 666
+#       alors afficher "match nul"
+
 
 ##jeu en 1vs1
 
