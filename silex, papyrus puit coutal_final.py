@@ -77,7 +77,7 @@ def game():
                 inputClavierDeux = int(input("silex (0) papyrus (1) coutal (2) ?"))
     #           assigner à botGame un nombre random sous format int entre 0 et 2
                 botGame = random.randint(0, 2)
-    #           assigner à result le retour de l'execultion de la fonction round avec les parametres joueurInput et botGame
+    #           assigner à result le retour de l'execultion de la fonction round avec les parametres inputClavierDeux et botGame
                 result = round(inputClavierDeux, botGame)
     #           si result est égal à "manche gagnée par joueur 1"
                 if(result == "manche gagnée par joueur 1"):
@@ -89,14 +89,14 @@ def game():
                     botScore += 1
     #           sinon afficher result
                 else:
-                    print("result")
+                    print(result)
     ## avec BO
     #       sinon inputClavierUn est éga l à 6
             elif(inputClavierUn == 6):
     #           assigner à nbrTours l'information de l'input du clavier sous format int "le nombre de manche necessaire pour gagner"
                 nbrTours = int(input("le nombre de manche necessaire pour gagner ?: "))
-    #           assigner à joueurInput l'information de l'input du clavier sous format int ( silex (0) papyrus (1) coutal (2) ?)
-                joueurInput = int(input("silex (0) papyrus (1) coutal (2) ?: "))
+    #           assigner à inputClavierDeux l'information de l'input du clavier sous format int ( silex (0) papyrus (1) coutal (2) ?)
+                inputClavierDeux = int(input("silex (0) papyrus (1) coutal (2) ?: "))
     #           assigner à botGame un nombre random sous format int entre 0 et 2
                 botGame = random.randint(0, 2)
     #            si result est égal à "manche gagnée par joueur 1 "
@@ -119,6 +119,8 @@ def game():
                         print("vainqueur joueur 2 avec ",joueurDeuxScore ,"point(s)\n perdant joueur 1 avec ",joueurUnScore ,"point(s)")            
     #               sortir de la boucle
                     break
+                else:
+                    print(result)
             else:
                 print("erreur")
     else:
